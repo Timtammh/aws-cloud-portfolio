@@ -1,6 +1,3 @@
-# aws-cloud-portfolio
-AWS Cloud Technical Essentials — hands-on project portfolio
-
 # AWS Cloud Portfolio
 
 Hands-on project portfolio built alongside **AWS Cloud Technical Essentials** (Coursera).
