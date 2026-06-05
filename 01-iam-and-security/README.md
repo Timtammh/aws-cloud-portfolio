@@ -2,13 +2,13 @@
 
 ## AWS Services Used
 - AWS IAM (Users, Groups, Roles, Policies)
-- AWS Root User
+- AWS Root User Protection
 - Multi-Factor Authentication (MFA)
 
 ## What I Built
-- Created IAM Users and Groups with least-privilege policies
-- Configured Role-Based Access for EC2
-- Secured Root User with MFA
+- Reviewed 3 IAM Users with assigned access paths
+- Explored 3 IAM Groups: EC2-Admin, EC2-Support, S3-Support
+- Examined 29 IAM Roles including service and lab roles
 - Completed Lab 1: Introduction to IAM (Grade: 100%)
 
 ## Key Concepts Learned
@@ -24,9 +24,9 @@
 ### IAM Components
 | Component | Purpose |
 |-----------|---------|
-| User | Individual identity with credentials |
+| User | Individual identity with long-term credentials |
 | Group | Collection of users sharing permissions |
-| Role | Temporary permissions assumed by services |
+| Role | Temporary permissions assumed by services/users |
 | Policy | JSON document defining allowed actions |
 
 ### Root User Best Practices
@@ -34,13 +34,21 @@
 - Enable MFA immediately after account creation
 - Create admin IAM user for regular use
 
-## Architecture
-![IAM Architecture](./iam-architecture.png)
+## Screenshots
 
-## Lab Screenshot
-![Lab 1 Result](./lab1-result.png)
+### IAM Dashboard
+![IAM Dashboard](./iam-dashboard.png)
+
+### IAM Users
+![IAM Users](./IAM-users.png)
+
+### IAM Groups
+![IAM Groups](./iam-groups.png)
+
+### IAM Roles
+![IAM Roles](./iam-roles.png)
 
 ## Lessons Learned
 - IAM Role vs IAM User: Roles are for services/temporary access, Users are for people
 - Least privilege principle: only grant permissions actually needed
-- MFA adds critical second layer even if password is compromised
+- Groups simplify permission management — assign policies to groups, not individual users
